@@ -31,14 +31,12 @@ Traitormod.AddCommand("!claim", function (client, args)
     end
 
     for _, killer in pairs(killers) do
-        if killer.Character == client.Character then
-            local bounty = price * killer.Count
-            Traitormod.AwardPoints(client, bounty)
-            -- Reset the count after claiming
-            killer.Count = 0
-            print("awarded "..client.Character.Name.." "..bounty.." points, reset count to 0")
-            return true
-        end
+        local bounty = price * killer.Count
+        Traitormod.AwardPoints(client, bounty)
+        -- Reset the count after claiming
+        killer.Count = 0
+        print("awarded "..client.Character.Name.." "..bounty.." points, reset count to 0")
+        return true
     end
     print("claim failed")
     return false
