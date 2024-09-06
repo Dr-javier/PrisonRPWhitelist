@@ -129,8 +129,8 @@ config.GamemodeConfig = {
 
         AmountTraitors = function (amountPlayers)
             config.TestMode = false
-            if amountPlayers > 14 then return 3 end
-            if amountPlayers > 7 then return 2 end            
+            if amountPlayers > 14 then return 1 end
+            if amountPlayers > 7 then return 1 end            
             if amountPlayers > 3 then return 1 end
             if amountPlayers == 1 then 
                 Traitormod.SendMessageEveryone("1P testing mode - no points can be gained or lost") 
@@ -150,7 +150,7 @@ config.GamemodeConfig = {
             if client.Character.HasJob("headguard") then return 0 end
             if client.Character.HasJob("convict") then return 0 end
             if client.Character.HasJob("guard") then return 0 end
-            if client.Character.HasJob("prisondoctor") then return 0.6 end
+            if client.Character.HasJob("prisondoctor") then return 0 end
             if client.Character.HasJob("he-chef") then return 0.8 end
 
             return 1
