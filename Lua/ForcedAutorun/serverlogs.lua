@@ -1,4 +1,4 @@
-local discordWebHook = "https://discord.com/api/webhooks/1278211689434710150/s0TjdLrySIAwM5sVtqIfE6wQ9XqlphsgRCF5htIPDEXYUvIzY06PAgFep7g7Yd-kQ7eO"
+local discordWebHook = "https://discord.com/api/webhooks/1281723953135616021/4TnkFv30wBVOiskHrxeoWR8D9f27mS8Wk37w1AKLAIpcatJvjYWz8OydIuWTyUCNTeeY"
 
 local function escapeQuotes(str)
     return str:gsub("\"", "\\\"")

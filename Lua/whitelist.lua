@@ -1,3 +1,5 @@
+local json = require("json")
+
 local whitelistFilePath = Traitormod.Path .. "/Lua/whitelist.json"
 
 local function loadWhitelist()

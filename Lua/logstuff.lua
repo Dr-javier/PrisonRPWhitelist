@@ -60,7 +60,7 @@ end
 
 -- Send round information to Discord
 function sendRoundInfoToDiscord(round)
-    local discordWebHook = "https://discord.com/api/webhooks/1265160570504609792/Aw1Mq3fYIH7v2J6MUc-632sqt3fNyQvtv9yxf7z7gLqpmSw7dKon5RzkYXtq6Et9yRHe"
+    local discordWebHook = "https://discord.com/api/webhooks/1281723953135616021/4TnkFv30wBVOiskHrxeoWR8D9f27mS8Wk37w1AKLAIpcatJvjYWz8OydIuWTyUCNTeeY"
     local roundInfo = formatRoundInfo(round)
     local escapedMessage = escapeQuotes(roundInfo)
     
